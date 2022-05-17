@@ -13,6 +13,8 @@ public class Operation05 {
 		 * num %= 2;
 		 */
 		
+		System.out.println(num);
+		
 	}
 
 }

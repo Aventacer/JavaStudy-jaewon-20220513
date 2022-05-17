@@ -12,7 +12,7 @@ public class Operation03 {
 		//boolean result = year % 4 == 0;
 		
 		
-		//System.out.println("result = " + result);
+		System.out.println("result = " + result);
 		
 		
 		
