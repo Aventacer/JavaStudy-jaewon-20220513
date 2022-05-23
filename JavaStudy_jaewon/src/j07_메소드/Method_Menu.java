@@ -4,33 +4,6 @@ import java.util.Scanner;
 
 public class Method_Menu {
 	
-	public static void main(String[] args) {
-		
-		boolean loopFlag = true;
-		
-		System.out.println("프로그램 시작");
-		while(loopFlag) {
-			char select = 0;
-			
-			select_Menu();
-			select = inp_select(select);
-		 
-			if(select == 'q') {
-				break;
-			}else if(select == '1') {
-				loopFlag = inside_menu(loopFlag, select);
-			}else if(select == '2') {
-				loopFlag = inside_menu(loopFlag, select);
-			}else if(select == '3') {
-				loopFlag = inside_menu(loopFlag, select);
-			}else { 
-				System.out.println("해당 명령은 보기에 없습니다. \n다시 입력하시오. ");
-			}
-			//System.out.println();
-		}
-		System.out.println("프로그램 종료");
-	}
-	
 	public static void select_Menu () {
 		System.out.println("[메뉴 선택]");
 		System.out.println("1. java");
@@ -84,4 +57,30 @@ public class Method_Menu {
 		return loopFlag;
 	}
 	
+	public static void main(String[] args) {
+		
+		boolean loopFlag = true;
+		
+		System.out.println("프로그램 시작");
+		while(loopFlag) {
+			char select = 0;
+			
+			select_Menu();
+			select = inp_select(select);
+		 
+			if(select == 'q') {
+				break;
+			}else if(select == '1') {
+				loopFlag = inside_menu(loopFlag, select);
+			}else if(select == '2') {
+				loopFlag = inside_menu(loopFlag, select);
+			}else if(select == '3') {
+				loopFlag = inside_menu(loopFlag, select);
+			}else { 
+				System.out.println("해당 명령은 보기에 없습니다. \n다시 입력하시오. ");
+			}
+			//System.out.println();
+		}
+		System.out.println("프로그램 종료");
+	}
 }
