@@ -18,12 +18,12 @@ package j08_클래스;
 */
 
 public class Carmain {
-
+	
 	public static void main(String[] args) {
 		Car car1 = new Car();
 		Car car2 = new Car();
 		Car car3 = new Car();
-		
+	
 		car1.company = "KIA";
 		car1.model = "K7";
 		car1.color = "블랙";
