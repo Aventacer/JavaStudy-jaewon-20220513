@@ -20,8 +20,13 @@ public class Method02 {
 		return "홍길동";
 	}
 	
-	public static int test04(){
-		return 10000;
+	public static int test04(int num){
+		num = 10000;
+		return num;
+	}
+	public static String test04(String str){
+		str = "10000";
+		return str;
 	}
 	
 	// 매개 있고 반환 있고
@@ -46,7 +51,8 @@ public class Method02 {
 		test02(3,1900);
 		String name = test03();
 		System.out.println(name);
-		System.out.println(test04());
+		System.out.println(test04(4));
+		System.out.println(test04("123"));
 		System.out.println(test05("응답하라",1988));
 		test06();
 		System.out.println("메인 메소드 끝");

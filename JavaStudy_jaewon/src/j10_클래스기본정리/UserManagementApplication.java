@@ -12,6 +12,8 @@ public class UserManagementApplication {
 		
 		  UserManagementController userManagementController = new UserManagementController(); 
 		  userManagementController.createUser();
+		  userManagementController.createUser();
+		  userManagementController.createUser();
 		 
 		// 인터페이스에서 사용하는것
 		/*
