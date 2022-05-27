@@ -41,23 +41,25 @@ public class Array02 {
 //			System.out.print(array[i] + " ");
 //		}
 		
-		int count = 0, num = 0;
+		int count = 0, num = 0, k = 0;
 		int[] array = null;
 		int[] array2 = new int[50];
 		
 		// 8의 배수 갯수 구하기
 		for (int i = 0, j = 0; i < 100; i++) {
 			if (i % 8 == 0 && i != 0) {
-				count++;	// 8의 배수 갯수
-				array = new int[count];	// 8의 배수 갯수가 구해질때마다 선언
-				array2[j] = array[j] = i;
-				j++;
+				array = new int[++count];	// 8의 배수 갯수가 구해질때마다 선언
+				array2[j++] = i;
+				for(k = 0; k < array.length ; k++) {
+					array[k] = array2[k];
+				}
+				System.out.print(array[count] + " ");
 			}
 		}
-		
-		for(int i = 0 ; i < count ; i++) {
-			System.out.print(array2[i] + " ");
-		}
+	
+//		for(int i = 0 ; i < count ; i++) {
+//			System.out.print(array[i] + " ");
+//		}
 		//System.out.println(array.length);
 		
 //		// 8의 배수를 배열에 대입
