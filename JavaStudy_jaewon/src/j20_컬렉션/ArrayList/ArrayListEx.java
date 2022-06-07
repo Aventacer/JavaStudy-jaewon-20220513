@@ -12,7 +12,7 @@ public class ArrayListEx {
 		strArray[4] = "a";
 
 		for (String str : strArray) {
-			//System.out.println(str);
+			System.out.println(str);
 		}
 
 		for (int i = 0; i < strArray.length; i++) {
@@ -31,7 +31,7 @@ public class ArrayListEx {
 		System.out.println();
 
 		for (String str : strArrayList) {
-			//System.out.println(str);
+			System.out.println(str);
 		}
 		
 		strArrayList.remove("b1");
