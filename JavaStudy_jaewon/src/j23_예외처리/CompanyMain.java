@@ -12,7 +12,7 @@ public class CompanyMain {
 	 * 4. finally에서 회사정보출력
 	*/
 	
-	public void printCompanies(ArrayList<Company> companies) throws Exception {
+	public void printCompanies(ArrayList<Company> companies) throws NullPointerException, Exception {
 		for (Company c : companies) {
 			System.out.println("회사명 : " + c.getName());
 			System.out.println("주소 : " + c.getAddress());
